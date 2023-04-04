@@ -10,7 +10,7 @@ function calcImc()
     //condição 
     if(altura != "" && peso != "")
     {
-        let imc = (peso / (altura*2)).toFixed(2);
+        let imc = (peso / (altura*altura)).toFixed(2);
         let mensagem = ""; 
 
         if(imc < 18.5){
