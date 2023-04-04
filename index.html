@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta name="author" content="Maycon C. T. Oliveira">
+    <link rel="icon" type="image/png" href="imc.png"/>
+    <link rel="stylesheet" href="estilo.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.mask.js"></script>
+    <title>Projeto Cálculo IMC</title>
+    <script>
+    $(document).ready(function()
+    {
+        $('#altura').mask('0.00', {reverse: true});
+        $('#peso').mask('000', {reverse: true});
+    });
+    </script>
+</head>
+<body>
+    <script>
+        function aparecer(x)
+        {
+            var resposta = document.getElementById(x);
+            if(resposta.className.indexOf("visivel")==-1)
+                resposta.className = resposta.className.replace("escondido","visivel");
+        }
+    </script>
+    <div class="container">
+        <h1>Cálculo IMC</h1>
+        <div class="input_campo">
+            <h2>Altura(em Metros):</h2>
+            <input type="number" id="altura" name="altura"/>
+        </div>
+        <div class="input_campo">
+            <h2>Peso(em Kg):</h2>
+            <input type="number" id="peso" name="peso"/>
+        </div>
+        <button id="btn_calcular" onclick="aparecer('resultado')"> <b>Calcular</b></button>
+        <textarea readonly id="resultado" name="resultado" class="escondido"></textarea>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	background:linear-gradient(#707174, #a19f9f ) no-repeat center fixed;
+    background-size: cover;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.escondido
+{
+    visibility: hidden;
+    height: 0;
+}
+
+.visivel
+{
+    visibility: visible;
+}
+
+.container{
+    background-color:  #1429e0;
+    display: block;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    width: 15%;
+	margin-left:43%;
+	margin-top:50px;
+    box-shadow:  2px 2px 5px 1px rgba(250,250,250,0.66), -2px -2px 5px 1px rgba(250,250,250,0.66);
+}
+
+h1, h2{
+	margin-block-start: 0em;
+    display: block; 
+    color: #ffffff;
+	margin:5px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+textarea,input{
+    border: solid 2px #a19f9f;
+    box-shadow:2px 2px 0px #000000;
+    text-align: center;
+    font-weight: bold;
+}
+textarea{
+	width:90%;
+    height: 5em;
+    border-radius: 0.5em;
+	margin-top:5px;
+	resize:none;
+    font-size: 18px;
+}
+
+input
+{
+	height: 1.5em;
+    width: 30%;
+    border-radius: 0.5em;
+    margin-block-start: 0em; 
+    margin: 5px 0px 5px 35%;
+    font-size: large;
+}
+
+.input_campo
+{
+	width: 100%;
+    display: flex;
+	flex-direction: column;
+}
+
+button{
+    height: 2em;
+    padding: 0 2em;
+    background-color: #1794ce;
+    border-radius: 10px;
+    color: #ffffff;
+	margin:20px 0;
+    font-size: medium;
+    border: solid 2px #a19f9f;
+    box-shadow:2px 2px 0px #000000;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #1429e0;
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .container{
+        width: 70%;
+        margin-left:7.5%;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:375px){
+    .container{
+        width: 70%;
+        margin-left:8.5%;
+    }
+} 
+
+@media screen and (min-width:376px) and (max-width:425px){
+    .container{
+        width: 70%;
+        margin-left:9%;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:768px){
+    .container{
+        width: 40%;
+        margin-left:28%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .container{
+        width: 35%;
+        margin-left:30%;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .container{
+        width: 25%;
+        margin-left:37%;
+    }
+}
